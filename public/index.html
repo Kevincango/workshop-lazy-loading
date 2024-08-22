@@ -18,7 +18,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="%PUBLIC_URL%/_dist_/index.css"
+      href="../src/index.css"
     />
     <title>Snowpack & Tailwind App</title>
   </head>
@@ -48,11 +48,16 @@
           Tailwind. It also includes Prettier and automatic publish to GitHub
           pages using GitHub Actions. Learn more:
         </p>
+
+        <div class="button-container">
+          <button id="generate-image">Add Image</button>
+        </div>
+
         <div id = 'images'>
-          <div class="random-images">
+          <div class="p-4">
             <img class="mx-auto" width="320" src="https://randomfox.ca/images/2.jpg" alt="">
           </div>
-          <div class="random-images">
+          <div class="p-4">
             <img class="mx-auto" width="320" src="https://randomfox.ca/images/7.jpg" alt="">
           </div>
         </div>
@@ -60,6 +65,6 @@
     </div>
 
     <!-- Add more scripts here -->
-    <script type="module" src="%PUBLIC_URL%/_dist_/index.js"></script>
+    <script type="module" src="../src/index.js"></script>
   </body>
 </html>
