@@ -3,7 +3,9 @@
 @import 'tailwindcss/dist/utilities.css';
 
 
-#images {
-    display: grid;
-    justify-content: center;
+#generate-image {
+    padding: 3px;
+    border: 2px solid black;
+    margin: 5px;
 }
+ 

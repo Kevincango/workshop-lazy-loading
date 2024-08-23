@@ -3,6 +3,8 @@
  * When you're ready to start on your site, clear the file. Happy hacking!
  **/
 
+import {registerImage} from './jazy'
+
 
 const imagesContainer = document.getElementById('images');
 const buttonAction = document.getElementById('generate-image');
@@ -19,6 +21,7 @@ buttonAction.addEventListener('click', () => {
 
     singleImageContainer.appendChild(imageGenerate);
     imagesContainer.appendChild(singleImageContainer);
+    registerImage(imageGenerate);
 });
 
 
