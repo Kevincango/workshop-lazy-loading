@@ -14,14 +14,14 @@ buttonAction.addEventListener('click', () => {
     singleImageContainer.className = 'p-4';
     const imageGenerate = document.createElement('img');
     const randomInt = Math.floor(Math.random() * 124);
-    imageGenerate.loading = 'lazy';
+    //imageGenerate.loading = 'lazy';
     imageGenerate.className = 'mx-auto';
     imageGenerate.width = '320';
-    imageGenerate.src = `https://randomfox.ca/images/${randomInt}.jpg`;
+    imageGenerate.dataset.src = `https://randomfox.ca/images/${randomInt}.jpg`;
 
     singleImageContainer.appendChild(imageGenerate);
     imagesContainer.appendChild(singleImageContainer);
-    registerImage(imageGenerate);
+    registerImage(singleImageContainer);
 });
 
 
