@@ -8,4 +8,10 @@
     border: 2px solid black;
     margin: 5px;
 }
+
+#clean-images {
+    padding: 3px;
+    border: 2px solid red;
+    margin: 5px;
+}
  
